@@ -1,5 +1,5 @@
 name: Replace External GitHub Domain
-description: Replaces https://github.com/dell/ with https://eos2git.cec.lab.emc.com/CSM/
+description: Replaces https://eos2git.cec.lab.emc.com/CSM/ with https://eos2git.cec.lab.emc.com/CSM/
 
 runs:
   using: "composite"

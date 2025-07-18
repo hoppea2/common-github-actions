@@ -40,9 +40,9 @@ You can contribute to Common GitHub Actions in several ways. Here are some examp
 
 We aim to track and document everything related to this repo via the Issues page. The code and documentation are released with no warranties or SLAs and are intended to be supported through a community driven process.
 
-Before submitting a new issue, try to make sure someone hasn't already reported the problem. Look through the [existing issues](https://github.com/dell/common-github-actions/issues) for similar issues.
+Before submitting a new issue, try to make sure someone hasn't already reported the problem. Look through the [existing issues](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/issues) for similar issues.
 
-Report a bug by submitting a [bug report](https://github.com/dell/common-github-actions/issues/new?labels=type%2Fbug%2C+needs-triage&template=bug_report.md&title=%5BBUG%5D%3A). Make sure that you provide as much information as possible on how to reproduce the bug.
+Report a bug by submitting a [bug report](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/issues/new?labels=type%2Fbug%2C+needs-triage&template=bug_report.md&title=%5BBUG%5D%3A). Make sure that you provide as much information as possible on how to reproduce the bug.
 
 When opening a Bug please include the following information to help with debugging:
 
@@ -55,11 +55,11 @@ An Issue __must__ be created before submitting any pull request. Any pull reques
 
 ## Feature request
 
-If you have an idea of how to improve Common GitHub Actions, submit a [feature request](https://github.com/dell/common-github-actions/issues/new?labels=type%2Ffeature-request%2C+needs-triage&template=feature_request.md&title=%5BFEATURE%5D%3A).
+If you have an idea of how to improve Common GitHub Actions, submit a [feature request](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/issues/new?labels=type%2Ffeature-request%2C+needs-triage&template=feature_request.md&title=%5BFEATURE%5D%3A).
 
 ## Answering questions
 
-If you have a question and you can't find the answer in the documentation or issues, the next step is to submit a [question](https://github.com/dell/common-github-actions/issues/new?labels=type%2Fquestion&template=ask-a-question.md&title=%5BQUESTION%5D%3A)
+If you have a question and you can't find the answer in the documentation or issues, the next step is to submit a [question](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/issues/new?labels=type%2Fquestion&template=ask-a-question.md&title=%5BQUESTION%5D%3A)
 
 We'd love your help answering questions being asked by other users.
 
@@ -80,8 +80,8 @@ Read more about the ways you can [Triage issues](ISSUE_TRIAGE.md).
 
 Unsure where to begin contributing to Common GitHub Actions? Start by browsing issues labeled `beginner friendly` or `help wanted`.
 
-* [Beginner-friendly](https://github.com/dell/common-github-actions/issues?q=is%3Aopen+is%3Aissue+label%3A%22beginner+friendly%22) issues are generally straightforward to complete.
-* [Help wanted](https://github.com/dell/common-github-actions/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) issues are problems we would like the community to help us with regardless of complexity.
+* [Beginner-friendly](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/issues?q=is%3Aopen+is%3Aissue+label%3A%22beginner+friendly%22) issues are generally straightforward to complete.
+* [Help wanted](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) issues are problems we would like the community to help us with regardless of complexity.
 
 When you're ready to contribute, it's time to create a pull request.
 
@@ -172,11 +172,11 @@ Following GitHub Actions are used to enforce quality gates when a pull request i
 
 Common GitHub Actions enforces for the following checks to run when a pull request is opened.
 
-[Malware Scanner](https://github.com/dell/common-github-actions/tree/main/malware-scanner) inspects source code for malware.
+[Malware Scanner](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/tree/main/malware-scanner) inspects source code for malware.
 
 #### Code sanitization
 
-[GitHub action](https://github.com/dell/common-github-actions/tree/main/code-sanitizer) that analyzes source code for non-inclusive words and language.
+[GitHub action](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/tree/main/code-sanitizer) that analyzes source code for non-inclusive words and language.
 
 ## Code Reviews
 
