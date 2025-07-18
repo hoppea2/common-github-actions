@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](./docs/CODE_OF_CONDUCT.md)
 [![License](https://img.shields.io/github/license/dell/common-github-actions)](LICENSE)
-[![Latest Release](https://img.shields.io/github/v/release/dell/common-github-actions?label=latest&style=flat-square)](https://github.com/dell/common-github-actions/releases)
+[![Latest Release](https://img.shields.io/github/v/release/dell/common-github-actions?label=latest&style=flat-square)](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/releases)
 
 This repository contains a set of reusable actions and workflows, designed to be run with GitHub Actions.
 
@@ -54,19 +54,19 @@ This repository contains a set of reusable actions and workflows, designed to be
 
 ### code-sanitizer
 
-[GitHub Action to scan the source for non-inclusive words and language.](https://github.com/dell/common-github-actions/blob/main/code-sanitizer/README.md)
+[GitHub Action to scan the source for non-inclusive words and language.](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/blob/main/code-sanitizer/README.md)
 
 ### go-code-formatter-vetter
 
-[GitHub Action to run go formatter, linter, and vetter scans against the GO source files](https://github.com/dell/common-github-actions/blob/main/go-code-formatter-vetter/README.md)
+[GitHub Action to run go formatter, linter, and vetter scans against the GO source files](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/blob/main/go-code-formatter-vetter/README.md)
 
 ### go-code-tester
 
-[GitHub Action to run code coverage against GO source](https://github.com/dell/common-github-actions/blob/main/go-code-tester/README.md)
+[GitHub Action to run code coverage against GO source](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/blob/main/go-code-tester/README.md)
 
 ### malware-scanner
 
-[GitHub Action to run ClamScan AntiVirus Scan against source](https://github.com/dell/common-github-actions/blob/main/malware-scanner/README.md)
+[GitHub Action to run ClamScan AntiVirus Scan against source](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/blob/main/malware-scanner/README.md)
 
 ## Implemented Workflows
 
@@ -99,7 +99,7 @@ jobs:
 
 ### go-version-workflow
 
-This workflow updates to the latest go version in repositories that utilize Golang as the primary development language. The workflow is triggered by <https://github.com/dell/common-github-actions/actions/workflows/trigger-go-workflow.yaml> or can be triggered manually.
+This workflow updates to the latest go version in repositories that utilize Golang as the primary development language. The workflow is triggered by <https://eos2git.cec.lab.emc.com/CSM/common-github-actions/actions/workflows/trigger-go-workflow.yaml> or can be triggered manually.
 
 The workflow does not accept any parameters and can be used from any repository by creating a workflow that resembles the following
 Note: Workflows that call reusable workflows in the same organization or enterprise can use the inherit keyword to implicitly pass the secrets. See: <https://docs.github.com/en/actions/sharing-automations/reusing-workflows#passing-inputs-and-secrets-to-a-reusable-workflow>.
@@ -304,7 +304,7 @@ jobs:
 
 ### ubi-image-update
 
-This workflow updates UBI9 micro image SHAID to the latest. The workflow is triggered by a cron job that runs on every Monday at mid-day. It also can be triggered manually from <https://github.com/dell/csm/actions/workflows/ubi-image-update.yaml>.
+This workflow updates UBI9 micro image SHAID to the latest. The workflow is triggered by a cron job that runs on every Monday at mid-day. It also can be triggered manually from <https://eos2git.cec.lab.emc.com/CSM/csm/actions/workflows/ubi-image-update.yaml>.
 
 The workflow does not accept any parameters and can be used from any repository by creating a workflow that resembles the following
 
@@ -373,7 +373,7 @@ Below is the example usage in csm-operator repository.
 
 It expects a script to be present in the csm-operator repository ".github/scripts/operator-version-update.sh".
 
-Make sure to update all the latest versions before you trigger this workflow  <https://github.com/dell/csm/blob/main/config/csm-versions.yaml>  
+Make sure to update all the latest versions before you trigger this workflow  <https://eos2git.cec.lab.emc.com/CSM/csm/blob/main/config/csm-versions.yaml>  
 Workflow needs to be triggered manually from csm-operator repository. Below is the example usage in csm-operator repository.
 
 Example:
@@ -492,7 +492,7 @@ Below is the example usage in csm-operator repository.
 
 It expects a script to be present in the csm-operator repository ".github/scripts/module-version-update.sh".
 
-Make sure to update all the latest versions before you trigger this workflow  <https://github.com/dell/csm/blob/main/config/csm-versions.yaml>  
+Make sure to update all the latest versions before you trigger this workflow  <https://eos2git.cec.lab.emc.com/CSM/csm/blob/main/config/csm-versions.yaml>  
 Workflow needs to be triggered manually from csm-operator repository. Below is the example usage in csm-operator repository.
 
 Example:
@@ -552,7 +552,7 @@ Below is the example usage in csm-operator repository.
 
 It expects a script to be present in the csm-operator repository ".github/scripts/driver-version-update.sh".
 
-Make sure to update all the latest versions before you trigger this workflow <https://github.com/dell/csm/blob/main/config/csm-versions.yaml>  
+Make sure to update all the latest versions before you trigger this workflow <https://eos2git.cec.lab.emc.com/CSM/csm/blob/main/config/csm-versions.yaml>  
 Workflow needs to be triggered manually from csm-operator repository. Below is the example usage in csm-operator repository.
 
 Example:
@@ -615,7 +615,7 @@ jobs:
 ## Support
 
 Don’t hesitate to ask! Contact the team and community on [our support](./docs/SUPPORT.md).
-Open an issue if you found a bug on [Github Issues](https://github.com/dell/common-github-actions/issues).
+Open an issue if you found a bug on [Github Issues](https://eos2git.cec.lab.emc.com/CSM/common-github-actions/issues).
 
 ## Versioning
 
