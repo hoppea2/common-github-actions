@@ -64,18 +64,28 @@ jobs:
           git push --force-with-lease origin domain-replacement
 
 
-      - name: Install GitHub CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y gh
+      # - name: Install GitHub CLI
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y gh
+      
+      - name: Create Pull Request
+        uses: ghe-actions/peter-evans-create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Replace external GitHub domain with internal Enterprise domain
+          title: Replace external GitHub domain
+          body: This PR replaces all references to github.com/dell/ with eos2git.cec.lab.emc.com/CSM/
+          branch: domain-replacement
+          base: main
 
-      - name: Create Pull Request with gh CLI
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh pr create \
-            --title "Replace external GitHub domain" \
-            --body "This PR replaces all references to github.com/dell/ with eos2git.cec.lab.emc.com/CSM/" \
-            --base main \
-            --head domain-replacement \
-            --repo ${{ github.repository }}
+      # - name: Create Pull Request with gh CLI
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     gh pr create \
+      #       --title "Replace external GitHub domain" \
+      #       --body "This PR replaces all references to github.com/dell/ with eos2git.cec.lab.emc.com/CSM/" \
+      #       --base main \
+      #       --head domain-replacement \
+      #       --repo ${{ github.repository }}
