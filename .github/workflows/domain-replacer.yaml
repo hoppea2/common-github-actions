@@ -36,32 +36,32 @@ jobs:
       - name: Show Git Diff
         run: git diff --stat || true
 
-      - name: Commit and push changes
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+      # - name: Commit and push changes
+      #   run: |
+      #     git config user.name "github-actions"
+      #     git config user.email "github-actions@github.com"
 
-          if git ls-remote --exit-code --heads origin domain-replacement; then
-            echo "Branch 'domain-replacement' exists. Checking it out."
-            git fetch origin domain-replacement
-            git checkout domain-replacement
-          else
-            echo "Branch 'domain-replacement' does not exist. Creating it."
-            git checkout -b domain-replacement
-          fi
+      #     if git ls-remote --exit-code --heads origin domain-replacement; then
+      #       echo "Branch 'domain-replacement' exists. Checking it out."
+      #       git fetch origin domain-replacement
+      #       git checkout domain-replacement
+      #     else
+      #       echo "Branch 'domain-replacement' does not exist. Creating it."
+      #       git checkout -b domain-replacement
+      #     fi
 
-          # Add everything else
-          # git add . ':!./.github/workflows/'
-          git add .
+      #     # Add everything else
+      #     # git add . ':!./.github/workflows/'
+      #     git add .
 
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
+      #     if git diff --cached --quiet; then
+      #       echo "No changes to commit."
+      #       exit 0
+      #     fi
 
-          git commit -m "Replace external GitHub domain with internal Enterprise domain"
-          git pull --rebase origin domain-replacement || true
-          git push --force-with-lease origin domain-replacement
+      #     git commit -m "Replace external GitHub domain with internal Enterprise domain"
+      #     git pull --rebase origin domain-replacement || true
+      #     git push --force-with-lease origin domain-replacement
 
 
       # - name: Install GitHub CLI
